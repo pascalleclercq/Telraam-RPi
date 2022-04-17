@@ -148,7 +148,7 @@ sudo /etc/init.d/samba restart
 # ==============
 # INSTALL OPENCV
 # ==============
-OPENCV_VERSION='3.4.3'
+OPENCV_VERSION='4.5.5'
 sudo apt-get install build-essential cmake pkg-config -y
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev -y
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
