@@ -32,7 +32,7 @@ rm -rf ~/Videos
 # ====================
 sudo apt-get install apache2 -y
 sudo apt-get install php libapache2-mod-php -y
-sudo apt-get install php-mysql mysql-server -y
+sudo apt-get install php-mysql mariadb-server -y
 
 # ============
 # RASPI CONFIG
@@ -60,7 +60,8 @@ sudo nano /etc/hosts
 # COPY TO SHARED DRIVE
 # ====================
 mkdir ~/Telraam
-mkdir ~/Scripts
+cd Telraam
+mkdir Scripts
 *** Copy over all Python scripts
 *** Copy over royalty-free TML background image to ~/Pictures
 chmod +x ~/Telraam/Scripts/*
@@ -155,7 +156,7 @@ sudo apt-get install libxvidcore-dev libx264-dev -y
 sudo apt-get install libgtk2.0-dev libgtk-3-dev -y
 sudo apt-get install libatlas-base-dev gfortran -y
 sudo apt-get install python2.7-dev python3-dev -y
-sudo apt-get install python-numpy python-scipy -y
+sudo apt-get install python3-numpy python3-scipy -y
 
 sudo rm -rf ~/.cache/pip
 
