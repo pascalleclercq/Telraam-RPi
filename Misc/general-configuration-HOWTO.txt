@@ -178,8 +178,8 @@ sudo /etc/init.d/dphys-swapfile start
 make -j4
 sudo make install
 sudo ldconfig
-cd /usr/local/lib/python3.5/dist-packages/
-sudo mv cv2.cpython-35m-arm-linux-gnueabihf.so cv2.so
+cd lib/pyhton3
+sudo cp cv2.cpython-39m-arm-linux-gnueabihf.so /usr/local/lib/python3.9/dist-packages/cv2.so
 cd
 rm -rf opencv-${OPENCV_VERSION} opencv_contrib-${OPENCV_VERSION}
 
